@@ -1,0 +1,164 @@
+body{
+    --color-primary:#009579;
+    --color-primary-dark:#007f67;
+    --color-secondary:#252c6a;
+    --color-error:#cc3333;
+    --color-success:#4bb544;
+    --border-radius:5px;
+
+    margin: 0;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/2548691d-4d8c-4d97-b96d-449d3cca5d7e/IN-en-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.netflix__logo{ 
+    position: fixed;
+    top:10px;
+    left: 50px;
+    width:160px;
+}
+.netflix__logo img{ 
+   width: 100%;
+}
+.hero__bg__overlay{
+    position: absolute;
+    z-index: -1;
+    inset:0;
+    width:100%;
+    height: 110vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.63));
+    background-repeat: no-repeat;
+}
+.container{
+    color: white;
+    width: 380px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 4rem;
+    /* padding-top: 1.5rem; */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.24);
+    background: rgba(0, 0, 0, 0.76);
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+.container,.form__input,.form__button{
+    font-family: 'Poppins', sans-serif;
+}
+.form > *:first-child{
+    margin-top: 0;
+}
+.form > *:last-child{
+    margin-bottom:0;
+}
+.form__title{
+    margin-bottom: 2rem;
+    
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message--success{
+    color: var(--color-success);
+}
+.form__message--error{
+    color: var(--color-error);
+}
+.form__input__group{
+    margin-bottom: 1rem;
+}
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline: none;
+    background-color: rgb(65, 65, 65);
+    height: 50px;
+    font-size: 16px;
+    border:none;
+}
+.form__input:focus{
+    border: 1px solid;
+    border-color:var(--color-primary);
+    background-color: rgb(255, 255, 255);
+}
+.form__input__error{
+    color: red;
+    border-color: red;
+    border:1px solid;
+    
+}
+.form__button{
+    background-color: #e50914;
+    width: 200px;
+    border: none;
+    height: 40px;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+}
+.form__button:hover{
+    background-color: #df2929;
+}
+.form__button:active{
+    transform: scale(0.98);
+}
+.form__input-email-error-message{
+    margin-top: 0.1rem;
+    font-size: 13px;
+}
+.form__input-password-error-message{
+    margin-top: 0.1rem;
+    font-size: 13px;
+}
+.form__text{
+    text-align: center;
+}
+.form__link{
+    text-decoration: none;
+    color: grey;
+}
+.form__link:hover{
+    text-decoration: underline;
+}
+.form__text__container{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.create__account{
+    text-align: center;  
+}
+.new__acc{
+    text-decoration: none;
+    color:grey;
+}
+.new__acc:hover{
+    text-decoration: underline;
+}
+.form--hidden{
+    display: none;
+}
+.sign__in__button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 50px;
+    border-radius: 5px;
+}
+.sign__in__button a{
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    
+}
